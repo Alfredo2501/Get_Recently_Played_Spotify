@@ -8,7 +8,8 @@ This script is from a personal project that I made to Data Analysis where the ne
 * What fact tables will you create and what will be the dimensional tables?
 * The process can be scaleted to 10, 100, or 1000 users?
 
-And the result was this:
+# Script Preview
+The result was this:
 ![1](https://github.com/Alfredo2501/Get_Recently_Played_Spotify/assets/65301739/b48913ad-b9e5-4394-a7a3-35aaf13f98ef)
 
 An script that recollect recently songs played from Spotify and collect the information in a Data Base.
@@ -16,10 +17,41 @@ An script that recollect recently songs played from Spotify and collect the info
 Originally the script only collected data about the song, like id of the song, track name, and artist name:
 ![2](https://github.com/Alfredo2501/Get_Recently_Played_Spotify/assets/65301739/9c6f75e8-81af-4ec8-aa7e-5916bad3d708)
 
-But I preferred to add more information to obtain better tables, adding information like the hour was played the song, the user who played the song, and his country. Getting something like this:
+But I preferred add more information to obtain better tables, adding information like the hour was played the song, the user who played the song, and his country. Getting something like this:
 ![3](https://github.com/Alfredo2501/Get_Recently_Played_Spotify/assets/65301739/eb3b6943-7f29-4fe8-a485-85db850fe6ec)
 
-**Note:** The hour was configured in Mexico time zone, but you can also change this configuring the timestamp in the script with your preferred time zone
+**Note:** The hour was configured in Mexico time zone, but you can also change this configuring the timestamp in the script with your preferred time zone.
+
+# Fact table and Dimensional tables
+With the information I have compiled, I created 3 tables in total: 1 Fact table and 2 Dimensional tables:
+
+*Fact table*
+**recently_played**
+
+This table store principally information about songs and users, having the following data:
+* track_id
+* user_id
+* played_at
+* user_country
+
+*Dimensional tables*
+**users**
+
+This table store information about the users that have used the script and the local server, having the following data:
+* user_id
+* display_name
+* country
+
+**tracks**
+
+This table store information about the tracks have been storaged in the data base, having the following data:
+* track_id
+* track_name
+* artist_name
+
+With these 3 tables I made the next ERD:
+![4](https://github.com/Alfredo2501/Get_Recently_Played_Spotify/assets/65301739/0e03303a-e4d4-4646-a47d-2370ec975194)
+
 
 # How to use
 1. Download the script.
