@@ -22,6 +22,7 @@ But I preferred add more information to obtain better tables, adding information
 
 
 User information is also stored in another table:
+
 ![6](https://github.com/Alfredo2501/Get_Recently_Played_Spotify/assets/65301739/e0d92db4-1243-42b2-a060-05324065733c)
 
 
