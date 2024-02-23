@@ -26,6 +26,7 @@ But I preferred add more information to obtain better tables, adding information
 With the information I have compiled, I created 3 tables in total: 1 Fact table and 2 Dimensional tables:
 
 *Fact table*
+
 **recently_played**
 
 This table store principally information about songs and users, having the following data:
@@ -35,6 +36,7 @@ This table store principally information about songs and users, having the follo
 * user_country
 
 *Dimensional tables*
+
 **users**
 
 This table store information about the users that have used the script and the local server, having the following data:
@@ -50,6 +52,7 @@ This table store information about the tracks have been storaged in the data bas
 * artist_name
 
 With these 3 tables I made the next ERD:
+
 ![4](https://github.com/Alfredo2501/Get_Recently_Played_Spotify/assets/65301739/0e03303a-e4d4-4646-a47d-2370ec975194)
 
 
