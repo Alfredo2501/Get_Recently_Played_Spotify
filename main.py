@@ -34,7 +34,7 @@ cursor.execute('''CREATE TABLE IF NOT EXISTS tracks (
 
 cursor.execute('''CREATE TABLE IF NOT EXISTS users (
                     user_id TEXT PRIMARY KEY,
-                    display_name TEXT,
+                    username TEXT,
                     country TEXT
                 )''')
 
@@ -66,7 +66,7 @@ for item in results['items']:
     display_name = user_info['display_name']
 
     # Insert into user_dimension
-    cursor.execute('''INSERT OR IGNORE INTO users (user_id, display_name, country)
+    cursor.execute('''INSERT OR IGNORE INTO users (user_id, username, country)
                       VALUES (?, ?, ?)''', (user_id, display_name, user_country))
 
     # Played track information
