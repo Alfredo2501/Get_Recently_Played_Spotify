@@ -56,12 +56,42 @@ With these 3 tables I made the next ERD:
 ![4](https://github.com/Alfredo2501/Get_Recently_Played_Spotify/assets/65301739/0e03303a-e4d4-4646-a47d-2370ec975194)
 
 
+Finally, we can respond to the objectives declared at the beginning:
+* Download daily your personal content about music playback and create an structured data table.
+  
+  The script get the daily content calling the service of the API Spotify and created 3 tables with this information.
+
+
+
+* The process must be 100% automatizate.
+
+  In the section "How to use" shown below, explains the steps to automate the script.
+
+
+ 
+* What fact tables will you create and what will be the dimensional tables?
+
+  3 tables were created: 1 Fact table and 2 Dimensional tables
+
+
+  recently_played(Fact), users(Dimensional), tracks(Dimensional)
+
+
+
+* The process can be scaleted to 10, 100, or 1000 users?
+  Yes, it can be. At the moment only can be scalated by a few users because it works locally for the moment and if these users are connected to the local red.
+
+  To scale it to many more users it is neccesary upload the script and the Dashboard App online to be available 24 hours and reach more users.
+
+  
 # How to use
 1. Download the script.
 2. Install the libraries if you do not have it (sqlite3, spotipy).
 3. Use your Dashboard from Spotify API and turn on your local web app (If you do not have a web app, you can create one with this tutorial: https://developer.spotify.com/documentation/web-api/howtos/web-app-profile).
 4. Log in the web app (localhost:8888) to connect with the profile you want to use.
 5. Copy and paste your credentials from your Dashboard App (client_id, client_secret, redirect_uri).
+   ![5](https://github.com/Alfredo2501/Get_Recently_Played_Spotify/assets/65301739/06f93824-7351-467f-a12b-0e2334d94f44)
+
 6. Run the script, when it finish you should see this text in the console "Recently played tracks saved to (db name)", and the file will be found in the root of the script.
 7. Open the file with a DGBA (Data Base Management System) and now you can see the last 50 songs played from the account at the time the script was executed, every time the script was executed, new data will be added without deleting previous data.
 
