@@ -23,7 +23,8 @@ But I preferred add more information to obtain better tables, adding information
 
 User information is also stored in another table:
 
-![6](https://github.com/Alfredo2501/Get_Recently_Played_Spotify/assets/65301739/e0d92db4-1243-42b2-a060-05324065733c)
+![6](https://github.com/Alfredo2501/Get_Recently_Played_Spotify/assets/65301739/76e6bca0-80d2-4a07-91ed-6ba6b1f47553)
+
 
 
 **Note:** The hour was configured in Mexico time zone, but you can also change this configuring the timestamp in the script with your preferred time zone.
@@ -47,7 +48,7 @@ This table store principally information about songs and users, having the follo
 
 This table store information about the users that have used the script and the local server, having the following data:
 * user_id
-* display_name
+* username
 * country
 
 **tracks**
@@ -59,7 +60,8 @@ This table store information about the tracks have been storaged in the data bas
 
 With these 3 tables I made the next ERD:
 
-![4](https://github.com/Alfredo2501/Get_Recently_Played_Spotify/assets/65301739/0e03303a-e4d4-4646-a47d-2370ec975194)
+![4](https://github.com/Alfredo2501/Get_Recently_Played_Spotify/assets/65301739/21fd4e05-d65c-4c2c-82b6-a65997640f75)
+
 
 
 Finally, we can respond to the objectives declared at the beginning:
