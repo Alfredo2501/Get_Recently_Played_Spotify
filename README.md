@@ -57,19 +57,19 @@ With these 3 tables I made the next ERD:
 
 
 Finally, we can respond to the objectives declared at the beginning:
-* Download daily your personal content about music playback and create an structured data table.
+* *Download daily your personal content about music playback and create an structured data table.*
   
   The script get the daily content calling the service of the API Spotify and created 3 tables with this information.
 
 
 
-* The process must be 100% automatizate.
+* *The process must be 100% automatizate.*
 
-  In the section "How to use" shown below, explains the steps to automate the script.
+  In the section "Automatization of the script" shown below, explains the steps to automate the script.
 
 
  
-* What fact tables will you create and what will be the dimensional tables?
+* *What fact tables will you create and what will be the dimensional tables?*
 
   3 tables were created: 1 Fact table and 2 Dimensional tables
 
@@ -78,7 +78,8 @@ Finally, we can respond to the objectives declared at the beginning:
 
 
 
-* The process can be scaleted to 10, 100, or 1000 users?
+* *The process can be scaleted to 10, 100, or 1000 users?*
+  
   Yes, it can be. At the moment only can be scalated by a few users because it works locally for the moment and if these users are connected to the local red.
 
   To scale it to many more users it is neccesary upload the script and the Dashboard App online to be available 24 hours and reach more users.
