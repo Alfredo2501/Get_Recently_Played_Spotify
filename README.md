@@ -1,6 +1,26 @@
 # Get_Recently_Played_Spotify
 Get recently played with Spotify API and store data in SQL using Python.
 
+This script is from a personal project that I made to Data Analysis where the next objectives had to be resolved.
+
+* Download daily your personal content about music playback and create an structured data table.
+* The process must be 100% automatizate.
+* What fact tables will you create and what will be the dimensional tables?
+* The process can be scaleted to 10, 100, or 1000 users?
+
+And the result was this:
+![1](https://github.com/Alfredo2501/Get_Recently_Played_Spotify/assets/65301739/b48913ad-b9e5-4394-a7a3-35aaf13f98ef)
+
+An script that recollect recently songs played from Spotify and collect the information in a Data Base.
+
+Originally the script only collected data about the song, like id of the song, track name, and artist name:
+![2](https://github.com/Alfredo2501/Get_Recently_Played_Spotify/assets/65301739/9c6f75e8-81af-4ec8-aa7e-5916bad3d708)
+
+But I preferred to add more information to obtain better tables, adding information like the hour was played the song, the user who played the song, and his country. Getting something like this:
+![3](https://github.com/Alfredo2501/Get_Recently_Played_Spotify/assets/65301739/eb3b6943-7f29-4fe8-a485-85db850fe6ec)
+
+**Note:** The hour was configured in Mexico time zone, but you can also change this configuring the timestamp in the script with your preferred time zone
+
 # How to use
 1. Download the script.
 2. Install the libraries if you do not have it (sqlite3, spotipy).
