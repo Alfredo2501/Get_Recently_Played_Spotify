@@ -20,6 +20,11 @@ Originally the script only collected data about the song, like id of the song, t
 But I preferred add more information to obtain better tables, adding information like the hour was played the song, the user who played the song, and his country. Getting something like this:
 ![3](https://github.com/Alfredo2501/Get_Recently_Played_Spotify/assets/65301739/eb3b6943-7f29-4fe8-a485-85db850fe6ec)
 
+
+User information is also stored in another table:
+![6](https://github.com/Alfredo2501/Get_Recently_Played_Spotify/assets/65301739/e0d92db4-1243-42b2-a060-05324065733c)
+
+
 **Note:** The hour was configured in Mexico time zone, but you can also change this configuring the timestamp in the script with your preferred time zone.
 
 # Fact table and Dimensional tables
